@@ -16,6 +16,10 @@
   color: var(--background-color);
 }
 
+body.variant-challenger-1 .hero h1 {
+  color: red;
+}
+
 .hero picture {
   position: absolute;
   z-index: -1;
