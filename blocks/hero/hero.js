@@ -3,8 +3,6 @@ const isChallenger = () => document.body.classList.contains('variant-challenger-
 
 export default function decorate(block) {
     if(isActiveExperiment() && isChallenger()) {
-    const createHeroDiv = document.createElement('div');
-    createHeroDiv.innerHTML = '<div class="rounded-element">Rounded Element</div>';
-    block.append(createHeroDiv);
+      block.innerHTML = '<div class="rounded-element">Rounded Element</div>';
     }
 }
