@@ -12,10 +12,11 @@ let showExperimentationOverlay;
 const isExperimentationEnabled = document.head.querySelector('[name^="experiment"],[name^="campaign-"],[name^="audience-"],[property^="campaign:"],[property^="audience:"]')
     || [...document.querySelectorAll('.section-metadata div')].some((d) => d.textContent.match(/Experiment|Campaign|Audience/i));
 if (isExperimentationEnabled) {
+   const exp = await import('../plugins/experimentation/src/index.js');
    const {
     loadEager: runExperimentation,
     loadLazy: showExperimentationOverlay,
-   } = await import('../plugins/experimentation/src/index.js');
+   } = exp;
 }
 
 import {
