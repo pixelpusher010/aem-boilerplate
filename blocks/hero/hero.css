@@ -16,7 +16,7 @@
   color: var(--background-color);
 }
 
-.hero rounded-element {
+.rounded-element {
   background-color: lightgray;
             border-radius: 15px;
             padding: 20px;
