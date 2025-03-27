@@ -16,8 +16,10 @@ if (isExperimentationEnabled) {
    runExperimentation = exp.loadEager;
    showExperimentationOverlay = exp.loadLazy;
    console.log('Experimentation enabled');
+   runHeroTest()
 }
 
+import runHeroTest from '../blocks/hero/hero.js';
 import {
   buildBlock,
   loadHeader,
